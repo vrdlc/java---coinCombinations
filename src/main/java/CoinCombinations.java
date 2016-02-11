@@ -8,7 +8,7 @@ public class CoinCombinations {
   public static void main(String[] args) {
 
   }
-    public static Integer giveChange(Integer change) {
+    public static String giveChange(Integer change) {
       Integer quarters = 0;
       Integer dimes = 0;
       Integer nickels = 0;
@@ -26,7 +26,7 @@ public class CoinCombinations {
         } else {
          change -= 1;
          pennies ++;
-        }
-      } return change;
+       }
+      } return "Your change is " + quarters + "quarters," + dimes + "dimes," + nickels + "nickels, and " + pennies + "pennies.";
     }
 }
